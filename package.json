@@ -1,0 +1,23 @@
+{
+  "name": "cicd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "launch:dashboard": "npx cypress open",
+    "launch:jenkins": "java -jar jenkins.war",
+    "test:movie": "cypress run --spec 'cypress/e2e/movie' --record --key 218d3cca-b1f1-41da-a4cc-99ad1d9c7ee8",
+    "test:swagger": "cypress run --spec 'cypress/e2e/swagger' --record --key 218d3cca-b1f1-41da-a4cc-99ad1d9c7ee8",
+    "test:parallel:chrome": "npm run test:movie -- --browser chrome --group Movie & npm run test:swagger -- --browser chrome --group Swagger",
+    "test:parallel:electron": "npm run test:movie -- --browser electron --group Movie & npm run test:swagger -- --browser electron --group Swagger",
+    "test:parallel:firefox": "npm run test:movie -- --browser firefox --group Movie & npm run test:swagger -- --browser firefox --group Swagger",
+    "test:parallel:streams": "npm run test:movie -- --browser chrome --group Movie & npm run test:swagger -- --browser firefox --group Swagger"
+  },
+  "author": "Alexandra Bujor",
+  "license": "AngryCFO",
+  "devDependencies": {
+    "cypress": "^13.13.1",
+    "npm-run-all": "^4.1.5"
+  }
+}
