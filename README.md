@@ -1,3 +1,9 @@
+[![CICD](https://img.shields.io/endpoint?url=https://cloud.cypress.io/badge/simple/tknnvw&style=flat&logo=cypress)](https://cloud.cypress.io/projects/tknnvw/runs)
+* [Ссылка на дашборд](https://cloud.cypress.io/projects/tknnvw/runs/1/overview?roarHideRunsWithDiffGroupsAndTags=1)
+![image](https://github.com/user-attachments/assets/5e4576be-4394-4aaa-8b37-d4d7fb2e2fbd)
+* [Ссылка на пройденные тесты](https://github.com/AngryCFO/JSAQA_CI-CD/actions/runs/11941524506)
+![image](https://github.com/user-attachments/assets/e5efc62b-351c-45a8-8cf0-9127bcf4be03)
+
 # Домашнее задание к занятию «8. CI/CD Jenkins»
 
 
