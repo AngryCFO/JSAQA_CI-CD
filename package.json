@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run",
+    "test": "cypress run --record --key a61f94a8-0064-47a7-8787-d761e03cf436",
     "launch:dashboard": "npx cypress open",
     "launch:jenkins": "java -jar jenkins.war",
     "test:movie": "cypress run --spec 'cypress/e2e/movie' --record --key 218d3cca-b1f1-41da-a4cc-99ad1d9c7ee8",
